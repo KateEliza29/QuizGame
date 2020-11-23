@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="QuizApp.css">
+    <link rel="icon" href="myAvatar.png">
+
+    <title>Trivia Challenge!</title>
+
+
+</head>
+<body>
+    <main id="pageWrapper">
+        <section id="endingBoard">
+            <h1>Game Over!</h1>
+            <h2>Your score is <span id="finalScore"></span> out of <span id="questionAmount"></span>.</h2>
+            <button id="restart" class="button1">Play again?</button>
+        </section>
+        <section id="startingBoard">
+            <label>How many questions would you like to be asked?</label><br>
+            <select id="questionCountSelector">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+            </select> <br>
+            <button id="submit" class="button1">Submit</button>
+        </section>
+
+        <section id="gameBoard">
+            <div id="scoreDisplay"><span id="score">0</span> out of <span id="questionNumber"></span></div>
+            <div id="questionDisplay"></div>
+                <button onclick="answerCheck(this)" id="answer0" class="button2">Answer 1</button><br>
+                <button onclick="answerCheck(this)" id="answer1" class="button2">Answer 2</button><br>
+                <button onclick="answerCheck(this)" id="answer2" class="button2">Answer 3</button><br>
+                <button onclick="answerCheck(this)" id="answer3" class="button2">Answer 4</button><br>
+            
+            <button id="newQuestion" class="button1">New Question</button>
+        </section>
+
+    </main>    
+
+    <script type="text/javascript" src="QuizApp3.js"></script>
+
+</body>
+</html>
